@@ -1,10 +1,11 @@
 # 🛡️ SafeVault: Reactive Asset Protection
 **Built for the Somnia Shannon Testnet Hackathon (March 2026)**
+[![Deploy with Vercel](https://vercel.com/button)](https://somnia-safevault.vercel.app/)
 
 SafeVault is a next-generation "Reactive" smart contract designed to protect user assets from market volatility. Unlike traditional vaults that require manual withdrawal, SafeVault monitors on-chain price feeds and automatically triggers defensive logic when a safety threshold is breached.
 
 ## 🚀 Live Demo & Links
-- **Live Dashboard:** [Your Vercel Link Here]
+- **Live Dashboard:** [https://somnia-safevault.vercel.app/](https://somnia-safevault.vercel.app/)
 - **Verified Contract:** [0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749](https://shannon-explorer.somnia.network/address/0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749#code)
 - **Video Demo:** [Your Loom/YouTube Link Here]
 
