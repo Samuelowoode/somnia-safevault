@@ -1,57 +1,32 @@
-# Sample Hardhat 3 Beta Project (`mocha` and `ethers`)
+# 🛡️ SafeVault: Reactive Asset Protection
+**Built for the Somnia Shannon Testnet Hackathon (March 2026)**
 
-This project showcases a Hardhat 3 Beta project using `mocha` for tests and the `ethers` library for Ethereum interactions.
+SafeVault is a next-generation "Reactive" smart contract designed to protect user assets from market volatility. Unlike traditional vaults that require manual withdrawal, SafeVault monitors on-chain price feeds and automatically triggers defensive logic when a safety threshold is breached.
 
-To learn more about the Hardhat 3 Beta, please visit the [Getting Started guide](https://hardhat.org/docs/getting-started#getting-started-with-hardhat-3). To share your feedback, join our [Hardhat 3 Beta](https://hardhat.org/hardhat3-beta-telegram-group) Telegram group or [open an issue](https://github.com/NomicFoundation/hardhat/issues/new) in our GitHub issue tracker.
+## 🚀 Live Demo & Links
+- **Live Dashboard:** [Your Vercel Link Here]
+- **Verified Contract:** [0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749](https://shannon-explorer.somnia.network/address/0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749#code)
+- **Video Demo:** [Your Loom/YouTube Link Here]
 
-## Project Overview
+## 🧠 How It Works (The Reactive Logic)
+SafeVault utilizes Somnia’s native reactivity to perform **automated risk management**.
 
-This example project includes:
+1. **The Subscription:** Upon deployment, the contract subscribes to specific event topics (e.g., a BTC/USD Price Feed).
+2. **The Monitor:** The contract defines a `safetyThreshold` (currently set to $2,500).
+3. **The Reaction:** When an on-chain event reports a price below the threshold, Somnia's execution layer triggers the `onEvent` callback in SafeVault.
+4. **The Protection:** The vault immediately executes protection logic—locking deposits or moving assets—faster than any manual human intervention.
 
-- A simple Hardhat configuration file.
-- Foundry-compatible Solidity unit tests.
-- TypeScript integration tests using `mocha` and ethers.js
-- Examples demonstrating how to connect to different types of networks, including locally simulating OP mainnet.
+## 🛠️ Tech Stack
+- **Smart Contract:** Solidity 0.8.30 (EVM Paris)
+- **Framework:** Hardhat 3
+- **Frontend:** Next.js 16 (App Router) + Tailwind CSS
+- **Interaction:** Ethers.js v6
+- **Network:** Somnia Shannon Testnet
 
-## Usage
+## 🏗️ Local Setup
 
-### Running Tests
-
-To run all the tests in the project, execute the following command:
-
-```shell
-npx hardhat test
-```
-
-You can also selectively run the Solidity or `mocha` tests:
-
-```shell
-npx hardhat test solidity
-npx hardhat test mocha
-```
-
-### Make a deployment to Sepolia
-
-This project includes an example Ignition module to deploy the contract. You can deploy this module to a locally simulated chain or to Sepolia.
-
-To run the deployment to a local chain:
-
-```shell
-npx hardhat ignition deploy ignition/modules/Counter.ts
-```
-
-To run the deployment to Sepolia, you need an account with funds to send the transaction. The provided Hardhat configuration includes a Configuration Variable called `SEPOLIA_PRIVATE_KEY`, which you can use to set the private key of the account you want to use.
-
-You can set the `SEPOLIA_PRIVATE_KEY` variable using the `hardhat-keystore` plugin or by setting it as an environment variable.
-
-To set the `SEPOLIA_PRIVATE_KEY` config variable using `hardhat-keystore`:
-
-```shell
-npx hardhat keystore set SEPOLIA_PRIVATE_KEY
-```
-
-After setting the variable, you can run the deployment with the Sepolia network:
-
-```shell
-npx hardhat ignition deploy --network sepolia ignition/modules/Counter.ts
-```
+### 1. Smart Contract
+```bash
+git clone [Your-Repo-URL]
+npm install
+npx hardhat compile

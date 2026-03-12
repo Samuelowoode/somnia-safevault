@@ -18,3 +18,19 @@
 
 # Hardhat coverage reports
 /coverage
+
+# Security: NEVER commit your environment variables
+.env
+.env.local
+.env.*.local
+
+# Next.js build output (inside your frontend folder)
+/frontend/.next/
+/frontend/out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keystore (if using Hardhat 3 keystore plugin)
+vars.json
