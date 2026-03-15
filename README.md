@@ -7,8 +7,8 @@ SafeVault is a next-generation "Reactive" smart contract designed to protect use
 
 ## 🚀 Live Demo & Links
 - **Live Dashboard:** [https://somnia-safevault.vercel.app/](https://somnia-safevault.vercel.app/)
-- **Verified Contract:** [0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749](https://shannon-explorer.somnia.network/address/0x95E6b1f68aD870C13494dbB8AEE285AfC7d19749#code)
-- **Video Demo:** *Coming Soon*
+- **Video Demo (YouTube):** [Watch the demo here](https://youtu.be/LTuO_yRNKMM)
+- **Verified Contract:** [0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749](https://shannon-explorer.somnia.network/address/0x95E6b1f68aD870C13C94dbB8AEE285AfC7d19749#code)
 
 ## 🧠 How It Works (The Reactive Logic)
 SafeVault utilizes Somnia’s native reactivity to perform **automated risk management**.
